@@ -1,0 +1,67 @@
+shir_brosh
+Shir Brosh
+
+
+I discussed the exercise with: Ortal Glatt.
+
+=============================
+=  README for ex6:   =
+=============================
+reverse, speed_acceleration, speed_deceasing, volume_turn_up_or_down, low_pass_filter,
+change_wav_file, combine_equal_len_and_rate, combine_equal_rate_not_len, create_new_audio_by_rate,
+combine_audio, combine_files_menu, frequency_by_letter, composing_calculate, read_composing_file,
+composing, pass_menu, entrance_menu.
+
+==================
+=  Description: =
+==================
+I divided the project to function this way:
+
+the first 5 functions is the changing file options:
+reverse- A function that receives a list of lists and returns a new list
+    containing the lists from the original list in reversed order.
+speed_acceleration - A function that receives a list of lists and returns a new list
+    containing only the lists that have even indexes.
+speed_deceasing- A function that receives a list of lists and returns a new list containing
+    the original lists from the big list and between every original list there is a new
+    list composed from the average of the lists before and after her.
+volume_turn_up_or_down- A function that receives a list of lists and returns a new list
+    containing the original values times 1.2 or divide by 1.2 depend on the users input.
+low_pass_filter - A function that receives a list of lists and returns a new list containing the average
+    of the value, the one before him and the one after him for each value in the original list.
+
+the next function combines all the changing options:
+change_wav_file - A function that operates the change file menu, and changes the file
+    according to the users input.
+
+the next 4 functions relate to the combine files option:
+combine_equal_len_and_rate - A function that combines two audios data that has the same length and
+    frame rate, the new audio data will be the average of each value from the original values.
+combine_equal_rate_not_len - A function that combines two audios data that has the same frame rate
+    but different length, the new audio data will be the average of each value from the original
+    values and then the extra values left in the longest audio data will be added.
+create_new_audio_by_rate - A function that create new audio data for the longer frame rate- creates
+    new list composed only from the (short frame rate/ gc) values from each (long frame rate / gcd)
+    values.
+combine_audio - A function that combines two audios according to their length and frame rates.
+
+the next function is the combine menu:
+combine_files_menu - A function that asks for 2 file names to combine and operates the
+    combine functions.
+
+the next 3 functions relate to the composing option:
+frequency_by_letter- A function that receives a note and returns its frequency.
+composing_calculate- A function that receives a note and play time and returns the matching
+    audio data list according to the formula.
+read_composing_file- A function that receives the composing file and returns a list of all
+    the values.
+
+the next function composing menu:
+composing- A function that asks for instruction file name and creates the audio
+    data according to the instructions.
+
+the final 2 functions are the menus of the project:
+pass_menu- A function that operates the pass menu which saves a wav file or changes
+    one by moving the file to the change menu.
+entrance_menu- A function that operates the entrance menu- the user will enter a number
+    of action and the function will summon the matching action.
